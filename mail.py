@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 while True:
-    external_ip = urllib.request.urlopen('https://ident.me').read().decode('utf8')
+    external_ip = urllib.request.urlopen('https://api.ipify.org').read().decode('utf8')
     mail_content = external_ip
     #The mail addresses and password
     sender_address = 'your-address@gmail.com'
